@@ -1,0 +1,33 @@
+# Random Forest - Scam Listing Detection
+
+Dataset:
+`../House_Rent_Dataset_TN_synthetic_text_1500_preprocessed.csv`
+
+Notebook:
+`house_rent_random_forest_scam_detection.ipynb`
+
+Problem:
+Predict whether a rental listing is scam or not scam.
+
+Target:
+`Scam_Flag`
+
+Features:
+`Rent`, `BHK`, `Size`, `Bathroom`, `Area Type`, `Furnishing Status`, `Tenant Preferred`, `Point of Contact`
+
+Algorithm:
+`RandomForestClassifier`
+
+Notebook work:
+- Load dataset
+- Select features and target
+- Convert categorical columns using `pd.get_dummies`
+- Split train and test data
+- Train random forest model
+- Check score, confusion matrix and classification report
+- Plot confusion matrix heatmap
+- Predict first 5 test records
+- Save model
+
+Output:
+`house_rent_random_forest_scam_detection.pkl`
