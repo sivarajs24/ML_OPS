@@ -1,0 +1,39 @@
+{
+  "cities": [
+    "chennai",
+    "coimbatore",
+    "cuddalore",
+    "dindigul",
+    "erode",
+    "hosur",
+    "kanchipuram",
+    "karur",
+    "kumbakonam",
+    "madurai",
+    "nagercoil",
+    "salem",
+    "sivakasi",
+    "thanjavur",
+    "thoothukudi",
+    "tiruchirappalli",
+    "tirunelveli",
+    "tiruppur",
+    "vellore",
+    "villupuram"
+  ],
+  "area_types": [
+    "built area",
+    "carpet area",
+    "super area"
+  ],
+  "furnishing_statuses": [
+    "furnished",
+    "semi-furnished",
+    "unfurnished"
+  ],
+  "tenant_preferred": [
+    "bachelors",
+    "bachelors/family",
+    "family"
+  ]
+}

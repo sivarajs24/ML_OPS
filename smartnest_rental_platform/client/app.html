@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartNest Rental AI</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">SmartNest.ai</p>
+        <h1>SmartNest Rental AI</h1>
+        <p class="subtitle">
+          AI-powered rent estimates, safety checks, and locality insights.
+        </p>
+      </div>
+      <!-- Quick Start removed per UI update request -->
+    </header>
+
+    <section class="grid">
+      <article class="card" id="rent-card">
+        <h2>Rent Prediction</h2>
+        <p>Random Forest Regressor</p>
+        <div class="form-grid">
+          <input id="rent-size" type="number" placeholder="Size (sq ft)" />
+          <input id="rent-bhk" type="number" placeholder="BHK" />
+          <input id="rent-bath" type="number" placeholder="Bathroom" />
+          <select id="rent-city" data-options="cities"></select>
+          <select id="rent-area" data-options="area_types"></select>
+          <select id="rent-furnish" data-options="furnishing_statuses"></select>
+          <select id="rent-tenant" data-options="tenant_preferred"></select>
+        </div>
+        <button class="btn" id="rent-btn">Predict Rent</button>
+        <div class="output" id="rent-output">Enter details to estimate rent.</div>
+      </article>
+
+      <article class="card" id="scam-card">
+        <h2>Fake Listing Detection</h2>
+        <p>Random Forest + Logistic Regression</p>
+        <div class="form-grid">
+          <input id="scam-rent" type="number" placeholder="Rent (INR)" />
+          <input id="scam-size" type="number" placeholder="Size (sq ft)" />
+          <input id="scam-bhk" type="number" placeholder="BHK" />
+          <input id="scam-bath" type="number" placeholder="Bathroom" />
+          <select id="scam-city" data-options="cities"></select>
+          <select id="scam-area" data-options="area_types"></select>
+          <select id="scam-furnish" data-options="furnishing_statuses"></select>
+          <select id="scam-tenant" data-options="tenant_preferred"></select>
+        </div>
+        <button class="btn" id="scam-btn">Check Listing</button>
+        <div class="output" id="scam-output">Submit a listing to assess risk.</div>
+      </article>
+
+      <article class="card" id="text-card">
+        <h2>Text Verification</h2>
+        <p>Naive Bayes (TF-IDF)</p>
+        <textarea id="text-input" rows="6" placeholder="Paste listing description or messages here..."></textarea>
+        <button class="btn" id="text-btn">Verify Text</button>
+        <div class="output" id="text-output">Paste text to detect suspicious language.</div>
+      </article>
+
+      <article class="card" id="reco-card">
+        <h2>Recommendation</h2>
+        <p>KNN Similarity</p>
+        <div class="form-grid">
+          <input id="reco-rent" type="number" placeholder="Target Rent (INR)" />
+          <input id="reco-size" type="number" placeholder="Size (sq ft)" />
+          <input id="reco-bhk" type="number" placeholder="BHK" />
+          <input id="reco-bath" type="number" placeholder="Bathroom" />
+          <select id="reco-city" data-options="cities"></select>
+          <select id="reco-area" data-options="area_types"></select>
+          <select id="reco-furnish" data-options="furnishing_statuses"></select>
+          <select id="reco-tenant" data-options="tenant_preferred"></select>
+        </div>
+        <button class="btn" id="reco-btn">Find Similar Listings</button>
+        <div class="output" id="reco-output">Similar listings will appear here.</div>
+      </article>
+
+      <article class="card" id="locality-card">
+        <h2>Locality Analysis</h2>
+        <p>K-Means Clustering</p>
+        <select id="locality-city" data-options="cities"></select>
+        <button class="btn" id="locality-btn">Analyze Locality</button>
+        <div class="output" id="locality-output">Select a city to view cluster insights.</div>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
