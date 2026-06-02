@@ -1,0 +1,5 @@
+balcony
+bathroom
+bedroom
+kitchen
+living

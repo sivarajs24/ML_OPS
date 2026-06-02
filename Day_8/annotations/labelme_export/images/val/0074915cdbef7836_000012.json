@@ -1,0 +1,34 @@
+{
+  "version": "5.0.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "bathroom",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1279,
+          0
+        ],
+        [
+          1279,
+          719
+        ],
+        [
+          0,
+          719
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "images\\val\\0074915cdbef7836_000012.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}
