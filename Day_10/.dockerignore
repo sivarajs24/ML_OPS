@@ -1,0 +1,28 @@
+# Virtualenv and caches
+.venv
+**/__pycache__
+**/*.py[cod]
+**/*.bak
+**/.ipynb_checkpoints
+
+# Git / IDE
+.git
+.gitignore
+.vscode
+
+# Training data, notebooks, and scripts (not needed at runtime)
+model/*.csv
+model/*.ipynb
+model/train_models.py
+model/executed_notebook.ipynb
+
+# Duplicate artifact copies (runtime loads from model/artifacts only)
+server/artifacts
+server/__pycache__
+
+# Optional dev utilities (keep image lean)
+server/smoke_test.py
+server/resave_artifacts.py
+
+# Reverse proxy sample config (not used by the Flask container)
+nginx_files

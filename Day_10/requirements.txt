@@ -1,0 +1,16 @@
+# Runtime dependencies (pinned for reproducible Docker/local installs).
+# Python 3.10 recommended (matches serialized scikit-learn artifacts).
+
+Flask==3.0.3
+gunicorn==22.0.0
+joblib==1.4.2
+numpy==1.26.4
+onnxruntime==1.18.1
+opencv-python-headless==4.10.0.84
+Pillow==10.4.0
+pandas==2.2.2
+scikit-learn==1.5.1
+scipy==1.14.1
+
+# Vision (ONNX classifiers under /app/models). Install CPU torch in Dockerfile before this.
+ultralytics==8.3.48
